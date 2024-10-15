@@ -5,7 +5,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Navegar a la pantalla de inicio después de 3 segundos
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.of(context).pushReplacementNamed('/home');
     });
 
@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/background_icons.png'), // Asegúrate de tener esta imagen en assets
+            image: AssetImage('assets/images/background_icons.png'), // Asegúrate de tener esta imagen en assets
             fit: BoxFit.cover, // Asegura que la imagen cubra toda la pantalla
           ),
         ),
@@ -22,7 +22,7 @@ class SplashScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/quedu_logo.png', // Asegúrate de tener esta imagen en assets
+                'assets/images/quedu_logo.png', // Asegúrate de tener esta imagen en assets
                 height: 150,
               ),
               SizedBox(height: 20),

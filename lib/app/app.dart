@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       ),
       home: SplashScreen(), // Pantalla de splash como pantalla inicial
       routes: {
-        '/home': (context) => const HomeScreen(), // Ruta para la pantalla de inicio
+        '/home': (context) => HomeScreen(), // Ruta para la pantalla de inicio
       },
     );
   }

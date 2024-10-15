@@ -60,8 +60,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/quedu_logo.png
-    - assets/background_icons.png
+    - assets/images/quedu_logo.png
+    - assets/images/quedu_icon.png
+    - assets/images/background_icons.png
+    - assets/images/appbar.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
