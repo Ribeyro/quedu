@@ -12,7 +12,29 @@ class CourseList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Mis Cursos", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Mis Cursos", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.add),
+                  onPressed: () {
+                    // Acción para el ícono de agregar
+                    Navigator.pushNamed(context, '/createCourse');
+                  },
+                ),
+                IconButton(
+                  icon: Icon(Icons.arrow_forward),
+                  onPressed: () {
+                    // Acción para el ícono de avanzar
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
         SizedBox(height: 10),
         ...courses.map((course) => Padding(
           padding: EdgeInsets.symmetric(vertical: 5),

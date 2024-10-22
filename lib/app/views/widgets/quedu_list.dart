@@ -12,7 +12,28 @@ class QueduList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Mis Quedus", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Mis Quedus", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.add),
+                  onPressed: () {
+                    // Acción para el ícono de agregar
+                  },
+                ),
+                IconButton(
+                  icon: Icon(Icons.arrow_forward),
+                  onPressed: () {
+                    // Acción para el ícono de avanzar
+                  },
+                ),
+              ],
+            ),
+          ],
+        ),
         SizedBox(height: 10),
         ...quedus.map((quedu) => Padding(
           padding: EdgeInsets.symmetric(vertical: 5),

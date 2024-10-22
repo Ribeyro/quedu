@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quedu/app/views/create_course.dart';
 import 'app/views/splash.dart'; // Importa la pantalla de splash
 import 'app/views/home.dart'; // Importa la pantalla de inicio
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashScreen(),
         '/home': (context) => HomeScreen(),
+        '/createCourse': (context) => CreateCourseScreen(),
       },
     );
   }
